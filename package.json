@@ -23,12 +23,10 @@
     "type": "git",
     "url": "git+https://github.com/otacke/eslint-config-snordian-h5p.git"
   },
-  "devDependencies": {
-    "eslint": "^9.0.0",
-    "globals": "^15.0.0"
-  },
   "dependencies": {
-    "eslint-plugin-jsdoc": "^48.2.1"
+    "eslint": "^9.0.0",
+    "eslint-plugin-jsdoc": "^48.2.1",
+    "globals": "^15.0.0"
   },
   "peerDependencies": {
     "eslint": "^9"
