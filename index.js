@@ -1,10 +1,10 @@
 import eslintConfig from './eslint.config.js';
 
- /*
-  * Waiting for https://github.com/tc39/proposal-json-modules to become
-  * available in order to fetch the version from package.json. Don't want to
-  * build-chain this.
-  */
+/*
+ * Waiting for https://github.com/tc39/proposal-json-modules to become
+ * available in order to fetch the version from package.json. Don't want to
+ * build-chain this.
+ */
 export default {
   meta: {
     name: eslintConfig.name,
