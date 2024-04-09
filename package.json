@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-snordian-h5p",
+  "version": "1.0.0",
+  "description": "ESLint configuration for Snordian H5P projects",
+  "keywords": [
+    "eslint",
+    "config",
+    "snordian",
+    "h5p"
+  ],
+  "homepage": "https://github.com/otacke/eslint-config-snordian-h5p#readme",
+  "bugs": {
+    "url": "https://github.com/otacke/eslint-config-snordian-h5p/issues"
+  },
+  "license": "MIT",
+  "author": "Oliver Tacke",
+  "files": [
+    "index.js",
+    "eslint.config.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otacke/eslint-config-snordian-h5p.git"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-plugin-jsdoc": "^48.2.1",
+    "globals": "^15.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9"
+  },
+  "type": "module"
+}
