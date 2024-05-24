@@ -27,6 +27,7 @@ You need to use ESLint 9 or later with flat config.
   should do the job. If you need to tweak the settings: Beware, I may not have
   fully understood flat config yet and may not have implemented everything to
   work as required.
+
 3. Assuming you have a dedicated source (src) directory, do your linting with
   something such as
   ```console
