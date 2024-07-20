@@ -48,7 +48,14 @@ export default [{
       // SNORDIAN specific rules
       'arrow-parens': ['error', 'always'],
       'object-curly-spacing': ['error', 'always'],
-      'no-alert': ['error'],
+      'prefer-template': ['error', 'always'],
+      'no-await-in-loop': ['error', 'always'],
+      'no-self-compare': ['error', 'always'],
+      'dot-notation': ['error', 'always'],
+      'no-eval': ['error', 'always'],
+      'no-implied-eval': ['error', 'always'],
+      'no-magic-numbers': ['warn', { 'ignoreArrayIndexes': true, 'ignoreDefaultValues': true, 'enforceConst': true, 'detectObjects': true }]',
+      'no-nested-ternary': ['error', 'always'],
       // SNORDIAN specific rules JSDOC rules
       ...jsdoc.configs['flat/recommended'].rules
     },
