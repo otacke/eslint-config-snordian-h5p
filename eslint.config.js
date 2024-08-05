@@ -62,6 +62,7 @@ export default [{
         'ignore': [-1, 0, 1]
       }],
       'no-nested-ternary': ['error'],
+      'complexity': ['warn', 7],
       // SNORDIAN specific rules JSDOC rules
       ...jsdoc.configs['flat/recommended'].rules
     },
