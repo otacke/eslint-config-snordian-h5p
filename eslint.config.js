@@ -58,7 +58,6 @@ export default [{
         'ignoreArrayIndexes': true,
         'ignoreDefaultValues': true,
         'enforceConst': true,
-        'detectObjects': true,
         'ignore': [-1, 0, 1]
       }],
       'no-nested-ternary': ['error'],
