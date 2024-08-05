@@ -54,7 +54,7 @@ export default [{
       'dot-notation': ['error', 'always'],
       'no-eval': ['error', 'always'],
       'no-implied-eval': ['error', 'always'],
-      'no-magic-numbers': ['warn', { 'ignoreArrayIndexes': true, 'ignoreDefaultValues': true, 'enforceConst': true, 'detectObjects': true }]',
+      'no-magic-numbers': ['warn', { 'ignoreArrayIndexes': true, 'ignoreDefaultValues': true, 'enforceConst': true, 'detectObjects': true }],
       'no-nested-ternary': ['error', 'always'],
       // SNORDIAN specific rules JSDOC rules
       ...jsdoc.configs['flat/recommended'].rules
