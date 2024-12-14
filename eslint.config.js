@@ -22,7 +22,7 @@ export default [{
     },
     /*
      * With version 10 of eslint, formatting rules will be removed:
-     * semi, indend, brace-style, keyword-spacing, comma-spacing, space-infix-ops
+     * semi, indent, brace-style, keyword-spacing, comma-spacing, space-infix-ops
      * space-before-blocks, space-before-function-paren, quotes, arrow-parens,
      * object-curly-spacing
      * Probably replaceable by @stylistic/eslint-plugin-js
