@@ -58,7 +58,7 @@ export default [{
         'ignoreArrayIndexes': true,
         'ignoreDefaultValues': true,
         'enforceConst': true,
-        'ignore': [-1, 0, 1]
+        'ignore': [-1, 0, 1, 100]
       }],
       'no-nested-ternary': ['error'],
       'max-len': ['warn', { 'code': 120 }],
