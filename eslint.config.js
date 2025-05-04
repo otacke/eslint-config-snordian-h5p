@@ -1,5 +1,6 @@
 import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
+import stylisticJs from '@stylistic/eslint-plugin-js';
 
 // This seems to be wrong style, but I could not get flat cascade working
 export default [{
@@ -20,34 +21,31 @@ export default [{
         H5PIntegration: 'readonly'
       }
     },
-    /*
-     * With version 10 of eslint, formatting rules will be removed:
-     * semi, indent, brace-style, keyword-spacing, comma-spacing, space-infix-ops
-     * space-before-blocks, space-before-function-paren, quotes, arrow-parens,
-     * object-curly-spacing
-     * Probably replaceable by @stylistic/eslint-plugin-js
-     */
+    plugins: {
+      'jsdoc': jsdoc,
+      '@stylistic/js': stylisticJs
+    },
     rules: {
       // H5P Group rules
-      'semi': ['error', 'always'],
-      'indent': ['error', 2, { 'SwitchCase': 1 }],
-      'brace-style': ['error', 'stroustrup'],
-      'keyword-spacing': ['error', { 'after': true }],
-      'comma-spacing': ['error', { 'before': false, 'after': true }],
-      'space-infix-ops': ['error', { 'int32Hint': false }],
+      '@stylistic/js/semi': ['error', 'always'],
+      '@stylistic/js/indent': ['error', 2, { 'SwitchCase': 1 }],
+      '@stylistic/js/brace-style': ['error', 'stroustrup'],
+      '@stylistic/js/keyword-spacing': ['error', { 'after': true }],
+      '@stylistic/js/comma-spacing': ['error', { 'before': false, 'after': true }],
+      '@stylistic/js/space-infix-ops': ['error', { 'int32Hint': false }],
       'eqeqeq': ['error', 'smart'],
-      'space-before-blocks': 'error',
-      'space-before-function-paren': ['error', {
+      '@stylistic/js/space-before-blocks': 'error',
+      '@stylistic/js/space-before-function-paren': ['error', {
         'anonymous': 'always',
         'named': 'never',
         'asyncArrow': 'always'
       }],
       'no-extra-boolean-cast': 'off',
       'no-console': ['error', { 'allow': ['warn', 'error'] }],
-      'quotes': ['error', 'single'],
+      '@stylistic/js/quotes': ['error', 'single'],
       // SNORDIAN specific rules
-      'arrow-parens': ['error', 'always'],
-      'object-curly-spacing': ['error', 'always'],
+      '@stylistic/js/arrow-parens': ['error', 'always'],
+      '@stylistic/js/object-curly-spacing': ['error', 'always'],
       'prefer-template': ['error'],
       'no-await-in-loop': ['error'],
       'no-self-compare': ['error'],
@@ -61,7 +59,7 @@ export default [{
         'ignore': [-1, 0, 1, 100]
       }],
       'no-nested-ternary': ['error'],
-      'max-len': ['warn', { 'code': 120 }],
+      '@stylistic/js/max-len': ['warn', { 'code': 120 }],
       // SNORDIAN specific rules JSDOC rules
       ...jsdoc.configs['flat/recommended'].rules
     },
