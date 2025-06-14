@@ -1,6 +1,6 @@
 import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticJs from '@stylistic/eslint-plugin';
 
 // This seems to be wrong style, but I could not get flat cascade working
 export default [{
