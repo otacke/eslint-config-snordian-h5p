@@ -1,10 +1,14 @@
 import globals from 'globals';
+import importPlugin from 'eslint-plugin-import';
 import jsdoc from 'eslint-plugin-jsdoc';
+import nodePlugin from 'eslint-plugin-n';
 import stylisticJs from '@stylistic/eslint-plugin';
 
 // This seems to be wrong style, but I could not get flat cascade working
 export default [{
   ...jsdoc.configs['flat/recommended'],
+  ...nodePlugin.configs['flat/recommended-script'],
+  ...importPlugin.flatConfigs.recommended,
   ...{
     name: 'eslint-config-snordian-h5p',
     files: ['**/*.js'],
@@ -23,6 +27,7 @@ export default [{
     },
     plugins: {
       'jsdoc': jsdoc,
+      'n': nodePlugin,
       '@stylistic/js': stylisticJs
     },
     rules: {
@@ -43,6 +48,12 @@ export default [{
       'no-extra-boolean-cast': 'off',
       'no-console': ['error', { 'allow': ['warn', 'error'] }],
       '@stylistic/js/quotes': ['error', 'single'],
+      '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
+      'n/handle-callback-err': ['error'],
+      'import/prefer-default-export': 'off',
+      'no-restricted-syntax': 'off',
+      'no-plusplus': 'off',
+      'no-continue': 'off',
       // SNORDIAN specific rules
       '@stylistic/js/arrow-parens': ['error', 'always'],
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
