@@ -26,6 +26,7 @@ export default [{
       }
     },
     plugins: {
+      'import': importPlugin,
       'jsdoc': jsdoc,
       'n': nodePlugin,
       '@stylistic/js': stylisticJs
