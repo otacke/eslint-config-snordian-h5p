@@ -50,6 +50,7 @@ export default [{
       '@stylistic/js/quotes': ['error', 'single'],
       '@stylistic/js/comma-dangle': ['error', 'always-multiline'],
       'n/handle-callback-err': ['error'],
+      'import/extensions': ['error', 'ignorePackages', { js: 'always' }],
       'import/prefer-default-export': 'off',
       'no-restricted-syntax': 'off',
       'no-plusplus': 'off',
