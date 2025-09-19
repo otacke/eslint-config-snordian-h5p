@@ -34,5 +34,8 @@
   "peerDependencies": {
     "eslint": "^9"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "lint": "eslint './**/*.js'"
+  }
 }
