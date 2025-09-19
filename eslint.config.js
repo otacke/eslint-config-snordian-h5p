@@ -4,6 +4,8 @@ import jsdoc from 'eslint-plugin-jsdoc';
 import nodePlugin from 'eslint-plugin-n';
 import stylisticJs from '@stylistic/eslint-plugin';
 
+const INDENTATION_CHARS = 2;
+
 // This seems to be wrong style, but I could not get flat cascade working
 export default [{
   ...jsdoc.configs['flat/recommended'],
@@ -15,26 +17,26 @@ export default [{
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
-          impliedStrict: true
-        }
+          impliedStrict: true,
+        },
       },
       globals: {
         ...globals.browser,
         H5P: 'readonly',
         H5PEditor: 'readonly',
-        H5PIntegration: 'readonly'
-      }
+        H5PIntegration: 'readonly',
+      },
     },
     plugins: {
       'import': importPlugin,
       'jsdoc': jsdoc,
       'n': nodePlugin,
-      '@stylistic/js': stylisticJs
+      '@stylistic/js': stylisticJs,
     },
     rules: {
       // H5P Group rules
       '@stylistic/js/semi': ['error', 'always'],
-      '@stylistic/js/indent': ['error', 2, { 'SwitchCase': 1 }],
+      '@stylistic/js/indent': ['error', INDENTATION_CHARS, { 'SwitchCase': 1 }],
       '@stylistic/js/brace-style': ['error', 'stroustrup'],
       '@stylistic/js/keyword-spacing': ['error', { 'after': true }],
       '@stylistic/js/comma-spacing': ['error', { 'before': false, 'after': true }],
@@ -44,7 +46,7 @@ export default [{
       '@stylistic/js/space-before-function-paren': ['error', {
         'anonymous': 'always',
         'named': 'never',
-        'asyncArrow': 'always'
+        'asyncArrow': 'always',
       }],
       'no-extra-boolean-cast': 'off',
       'no-console': ['error', { 'allow': ['warn', 'error'] }],
@@ -69,20 +71,20 @@ export default [{
         'ignoreArrayIndexes': true,
         'ignoreDefaultValues': true,
         'enforceConst': true,
-        'ignore': [-1, 0, 1, 100]
+        'ignore': [-1, 0, 1, 100],
       }],
       'no-nested-ternary': ['error'],
       '@stylistic/js/max-len': ['warn', { 'code': 120 }],
       // SNORDIAN specific rules JSDOC rules
-      ...jsdoc.configs['flat/recommended'].rules
+      ...jsdoc.configs['flat/recommended'].rules,
     },
     settings: {
       jsdoc: {
         // SNORDIAN specific rules JSDOC settings
         preferredTypes: {
-          Function: 'function'
-        }
-      }
-    }
-  }
+          Function: 'function',
+        },
+      },
+    },
+  },
 }];
