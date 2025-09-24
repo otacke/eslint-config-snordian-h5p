@@ -27,7 +27,7 @@
     "@stylistic/eslint-plugin": "^5.4.0",
     "eslint": "^9",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsdoc": "^59.1.0",
+    "eslint-plugin-jsdoc": "^60.3.0",
     "eslint-plugin-n": "^17.23.1",
     "globals": "^16.4.0"
   },
