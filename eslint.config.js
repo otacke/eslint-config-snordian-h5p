@@ -77,6 +77,8 @@ export default [{
       '@stylistic/js/max-len': ['warn', { 'code': 120 }],
       // SNORDIAN specific rules JSDOC rules
       ...jsdoc.configs['flat/recommended'].rules,
+      // Prevent use of `function` to raise an error
+      'jsdoc/valid-types': 0,
     },
     settings: {
       jsdoc: {
