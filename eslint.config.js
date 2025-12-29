@@ -59,6 +59,7 @@ export default [{
       'no-plusplus': 'off',
       'no-continue': 'off',
       // SNORDIAN specific rules
+      'curly': ['error', 'all'],
       '@stylistic/js/arrow-parens': ['error', 'always'],
       '@stylistic/js/object-curly-spacing': ['error', 'always'],
       'prefer-template': ['error'],
