@@ -1,6 +1,5 @@
 {
   "name": "eslint-config-snordian-h5p",
-  "version": "1.0.0",
   "description": "ESLint configuration for Snordian H5P projects",
   "keywords": [
     "eslint",
